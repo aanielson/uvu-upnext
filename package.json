@@ -1,0 +1,24 @@
+{
+  "name": "uvu-upnext",
+  "version": "1.0.0",
+  "description": "UVU Institutional Advancement Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aanielson/uvu-upnext.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aanielson/uvu-upnext/issues"
+  },
+  "homepage": "https://github.com/aanielson/uvu-upnext#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "mysql": "^2.18.1"
+  }
+}
