@@ -3,8 +3,8 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
-  database: "upNext_db",
+  password: "my-secret-pw",
+  database: "uvu",
   socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 });
 

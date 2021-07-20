@@ -4,7 +4,8 @@
   "description": "UVU Institutional Advancement Application",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
