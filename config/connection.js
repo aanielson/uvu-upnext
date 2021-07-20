@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "events_db"
+  database: "upNext_db"
 });
 
 connection.connect(function(err) {

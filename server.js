@@ -1,5 +1,8 @@
 var express = require("express");
 
+// bring in the models
+var db = require("./models");
+
 var app = express();
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -15,7 +18,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burgers_controller");
+var routes = require("./controllers");
 
 app.use(routes);
 

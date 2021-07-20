@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS events_db;
-USE events_db;
+CREATE DATABASE IF NOT EXISTS upNext_db;
+USE upNext_db;
 
 -- If the table already exists, remove it before trying to create the table again
 DROP TABLE IF EXISTS events;
@@ -14,9 +14,6 @@ CREATE TABLE events (
     PRIMARY KEY (id)
 );
 
-CREATE DATABASE IF NOT EXISTS upnext_db;
-USE upnext_db;
-
 -- If the table already exists, remove it before trying to create the table again
 DROP TABLE IF EXISTS upNext;
 
@@ -26,6 +23,6 @@ CREATE TABLE upNext (
     title varchar(255) NOT NULL,
     posted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     summary varchar(255) NOT NULL,
-    link varchar(15) NOT NULL,
+    link varchar(225) NOT NULL,
     PRIMARY KEY (id)
 );
