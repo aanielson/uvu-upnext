@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var upNext = sequelize.define("upNext", {
+    var UpNext = sequelize.define("upNext", {
       title: DataTypes.STRING,
       posted: {
         type: DataTypes.TIMESTAMP,
@@ -9,5 +9,5 @@ module.exports = function(sequelize, DataTypes) {
       link: DataTypes.STRING
     });
     
-    return upNext;
+    return UpNext;
 };
