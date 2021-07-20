@@ -1,10 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
     var UpNext = sequelize.define("upNext", {
       title: DataTypes.STRING,
-      posted: {
-        type: DataTypes.TIMESTAMP,
-        defaultValue: CURRENT_TIMESTAMP
-      },
+      posted: DataTypes.DATE,
       summary: DataTypes.STRING,
       link: DataTypes.STRING
     });

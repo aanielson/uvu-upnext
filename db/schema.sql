@@ -10,7 +10,6 @@ CREATE TABLE events (
     event_name varchar(255) NOT NULL,
     event_date DATETIME NOT NULL,
     event_description varchar(1000) NOT NULL,
-    upcoming BOOL DEFAULT TRUE,
     PRIMARY KEY (id)
 );
 

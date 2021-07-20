@@ -18,12 +18,13 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers");
-
-app.use(routes);
+app.use(require('./controllers/events_controller'));
+app.use(require('./controllers/upNext_controller'));
 
 // listen on port 3000
 var PORT = process.env.PORT || 3000;
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });

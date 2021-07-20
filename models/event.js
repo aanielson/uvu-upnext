@@ -1,12 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
     var Event = sequelize.define("Event", {
-      event_name: DataTypes.STRING,
-      event_date: DataTypes.DATETIME,
+      event_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },  
+      event_date: DataTypes.DATE,
       event_description: DataTypes.STRING,
-      upcoming: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: true
-      }
     });
     
     return Event;

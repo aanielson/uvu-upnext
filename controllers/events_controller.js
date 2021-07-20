@@ -20,7 +20,7 @@ router.get("/events", function(req, res) {
     });
 });
 
-router.get("/events/upcoming/:true", function(req, res) {
+router.get("/events/:true", function(req, res) {
   // replace old function with sequelize function
   db.Event.findAll({
     where: {
