@@ -1,10 +1,9 @@
+{{#> layouts/main title="UPnext" }}
 <div id="events_container">
-    {{#each Event}}
-        {{ partials/event-block}}
-    {{/each}}
 </div>
 <div id="upNext_container">
     {{#each upNext}}
-        {{ partials/upNext-block}}
+        {{> upNext-block}}
     {{/each}}
 </div>
+{{/layouts/main}}
