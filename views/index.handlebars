@@ -4,6 +4,8 @@
         {{#each Event}}
             {{> event-block
               name=dataValues.event_name
+              imgName=dataValues.imgName
+              imgAlt=dataValues.imgAlt
               date=dataValues.event_date
               description=dataValues.event_description
             }}
@@ -14,7 +16,8 @@
         {{#each upNext}}
             {{> upNext-block
               title=dataValues.title
-              postDate=dataValues.posted
+              imgName=dataValues.imgName
+              imgAlt=dataValues.imgAlt
               summary=dataValues.summary
               upNextLink=dataValues.link
             }}
