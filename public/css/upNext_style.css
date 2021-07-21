@@ -1,14 +1,3 @@
-.fullbleed:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: 0;
-}
 .fullbleed > * {
     z-index: 1;
     position: inherit;

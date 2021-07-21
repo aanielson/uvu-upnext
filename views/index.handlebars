@@ -27,7 +27,7 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div id="upNext_container" class="col-md-8">
+        <div id="upNext_container" class="col-xs-12 col-lg-8">
           {{#each upNext}}
             {{> upNext-block
               title=dataValues.title
@@ -38,7 +38,7 @@
             }}
           {{/each}}
         </div>
-        <div id="events_container" class="col-md-4">
+        <div id="events_container" class="col-xs-12 col-lg-4">
           <h2>Upcoming Events</h2>
           {{#each Event}}
             {{> event-block
