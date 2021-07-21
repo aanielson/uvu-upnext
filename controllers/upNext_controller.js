@@ -11,8 +11,8 @@ router.get("/upNext", function(req, res) {
     .then(function(dbUpNext) {
       console.log(dbUpNext);
       // into the main index, updating the page
-      var hbsObject = { UpNext: dbUpNext };
-      return res.render("index", hbsObject);
+      var nextObject = { UpNext: dbUpNext };
+      return res.render("index", nextObject);
       // return JSON.stringify(dbUpNext);
     });
 });
