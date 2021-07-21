@@ -1,11 +1,16 @@
-var express = require("express");
-var router = express.Router();
+var db = require("../models");
+var Event, upNext;
 
-const controllers = readdirSync(__dirname)
-  .filter(f => f !== 'index.js');
+module.exports = function (app) {
+  app.get("/", function (req, res) {
+    db.Event.findAll().then(function (data) {
+      Event = data;
 
-controllers.forEach(controller => {
-  router.use(`/${controller}`, require(`./${controller}`))
-})
+      db.upNext.findAll().then(function (data) {
+        upNext = data;
 
-module.exports = router
+        res.render("index", { Event, upNext});
+      })
+    });
+  });
+};
