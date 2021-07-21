@@ -1,6 +1,23 @@
-/* ======================header styling */
+/*======================basic styling======================*/
+body, html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #292929;
+    font-size: 16px;
+}
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+/* ======================header styling====================== */
 #globalHeader .globalHeaderMain .navbar a.deptTitle {
     color: #275d38;
+    font-family: "Rajdhani", arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     /* #1A4127 */
 }
 ul.global-quicklinks li a {
@@ -71,10 +88,13 @@ ul.global-quicklinks li a:hover {
     margin: 0;
 }
 
-/* ===============footer styling */
+/* ======================footer styling====================== */
 #globalFooter {
     position: relative;
     font-family: "Rajdhani", arial, sans-serif;
+}
+#globalFooter h2{
+    text-transform: uppercase;
 }
 #globalFooter .footerDept {
     background-color: #E4E4E4;
