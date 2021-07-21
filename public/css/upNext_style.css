@@ -1,0 +1,47 @@
+.fullbleed:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 0;
+}
+.fullbleed > * {
+    z-index: 1;
+    position: inherit;
+}
+.jumbo header {
+    margin: auto;
+    border-radius: 3px;
+}
+.jumbo header h1 {
+    color: white;
+    font-size: 48px;
+}
+.jumbo header p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    color: #ffffff;
+}
+.upnext-home-top .col-target.region {
+    padding: 50px;
+}
+.upnext-home-top .upnext-promo {
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 50px;
+}
+.upnext-home-top .upnext-promo iframe {
+    min-height: 520px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+    .jumbo header {
+        padding: 60px 40px;
+    }
+}
