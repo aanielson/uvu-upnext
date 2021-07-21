@@ -9,9 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },{
       tableName: "events",
       timestamps: false
-    }
-    
-    );
+    });
     
     return Event;
 };
