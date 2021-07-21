@@ -1,11 +1,20 @@
 {
   "development": {
     "username": "root",
-    "password": "my-secret-pw",
-    "database": "uvu",
+    "password": "root",
+    "database": "upNext_db",
     "host": "127.0.0.1",
+    "port": 8889,
     "dialect": "mysql",
     "operatorsAliases": 0
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 8889,
+    "dialect": "mysql"
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",

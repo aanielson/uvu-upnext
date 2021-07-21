@@ -15,9 +15,9 @@ router.get("/events", function(req, res) {
     .then(function(dbEvent) {
       console.log(dbEvent);
       // into the main index, updating the page
-      // var hbsObject = { event: dbEvent };
-      // return res.render("index", hbsObject);
-      return JSON.stringify(dbEvent);
+      var hbsObject = { event: dbEvent };
+      return res.render("index", hbsObject);
+      // return JSON.stringify(dbEvent);
     });
 });
 
