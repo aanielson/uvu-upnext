@@ -26,31 +26,29 @@
       </div>
     </div>
     <div id="row">
-
-    </div>
-    <div id="events_container">
+      <div id="upNext_container" class="col-xs-12 col-lg-8">
+        {{#each upNext}}
+          {{> upNext-block
+            title=dataValues.title
+            imgName=dataValues.imgName
+            imgAlt=dataValues.imgAlt
+            summary=dataValues.summary
+            upNextLink=dataValues.link
+          }}
+        {{/each}}
+      </div>
+      <div id="events_container" class="col-xs-12 col-lg-4">
         <p>These are example events</p>
         {{#each Event}}
-            {{> event-block
-              name=dataValues.event_name
-              imgName=dataValues.imgName
-              imgAlt=dataValues.imgAlt
-              date=dataValues.event_date
-              description=dataValues.event_description
-            }}
+          {{> event-block
+            name=dataValues.event_name
+            imgName=dataValues.imgName
+            imgAlt=dataValues.imgAlt
+            date=dataValues.event_date
+            description=dataValues.event_description
+          }}
         {{/each}}
-    </div>
-    <div id="upNext_container">
-        <p>UpNext</p>
-        {{#each upNext}}
-            {{> upNext-block
-              title=dataValues.title
-              imgName=dataValues.imgName
-              imgAlt=dataValues.imgAlt
-              summary=dataValues.summary
-              upNextLink=dataValues.link
-            }}
-        {{/each}}
+      </div>
     </div>
   </section>
 </div>

@@ -26,11 +26,14 @@
     font-size: 21px;
     color: #ffffff;
 }
+.upnext-home-top .col-target.region {
+    padding: 50px;
+}
 .upnext-home-top .upnext-promo {
     width: 80%;
     max-width: 800px;
     display: block;
-    margin: 30px auto;
+    margin: 0 auto 50px;
 }
 .upnext-home-top .upnext-promo iframe {
     min-height: 520px;
