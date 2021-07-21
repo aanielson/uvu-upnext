@@ -1,16 +1,18 @@
 <div id="UPnext" class="main container">
     <div id="events_container">
-        <p>This is example text</p>
+        <p>These are example events</p>
         {{#each Event}}
-            <h3>{{dataValues.event_name}}</h3>
-            <p>test event</p>
+            {{> event-block
+              name=dataValues.event_name
+            }}
         {{/each}}
     </div>
     <div id="upNext_container">
-        <p>UpNext Title</p>
+        <p>UpNext</p>
         {{#each upNext}}
-            <h3>{{dataValues.title}}</h3>
-            <p>test event</p>
+            {{> upNext-block
+              title=dataValues.title
+            }}
         {{/each}}
     </div>
 </div>
