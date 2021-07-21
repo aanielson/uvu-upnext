@@ -1,7 +1,7 @@
 #upNext_container .up-next-card {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 0 20px 20px;
     position: relative;
 }
 #upNext_container .up-next-card .post-img-container,

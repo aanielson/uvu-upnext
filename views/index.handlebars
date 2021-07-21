@@ -25,29 +25,31 @@
         <iframe src="https://www.youtube.com/embed/URjpphSxgYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div id="row">
-      <div id="upNext_container" class="col-xs-12 col-lg-8">
-        {{#each upNext}}
-          {{> upNext-block
-            title=dataValues.title
-            imgName=dataValues.imgName
-            imgAlt=dataValues.imgAlt
-            summary=dataValues.summary
-            upNextLink=dataValues.link
-          }}
-        {{/each}}
-      </div>
-      <div id="events_container" class="col-xs-12 col-lg-4">
-        <p>These are example events</p>
-        {{#each Event}}
-          {{> event-block
-            name=dataValues.event_name
-            imgName=dataValues.imgName
-            imgAlt=dataValues.imgAlt
-            date=dataValues.event_date
-            description=dataValues.event_description
-          }}
-        {{/each}}
+    <div class="container-fluid">
+      <div class="row">
+        <div id="upNext_container" class="col-md-8">
+          {{#each upNext}}
+            {{> upNext-block
+              title=dataValues.title
+              imgName=dataValues.imgName
+              imgAlt=dataValues.imgAlt
+              summary=dataValues.summary
+              upNextLink=dataValues.link
+            }}
+          {{/each}}
+        </div>
+        <div id="events_container" class="col-md-4">
+          <h2>Upcoming Events</h2>
+          {{#each Event}}
+            {{> event-block
+              name=dataValues.event_name
+              imgName=dataValues.imgName
+              imgAlt=dataValues.imgAlt
+              date=dataValues.event_date
+              description=dataValues.event_description
+            }}
+          {{/each}}
+        </div>
       </div>
     </div>
   </section>
