@@ -4,6 +4,8 @@
         {{#each Event}}
             {{> event-block
               name=dataValues.event_name
+              date=dataValues.event_date
+              description=dataValues.event_description
             }}
         {{/each}}
     </div>
@@ -12,6 +14,9 @@
         {{#each upNext}}
             {{> upNext-block
               title=dataValues.title
+              postDate=dataValues.posted
+              summary=dataValues.summary
+              upNextLink=dataValues.link
             }}
         {{/each}}
     </div>
