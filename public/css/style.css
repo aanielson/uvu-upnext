@@ -1,0 +1,76 @@
+#globalHeader .globalHeaderMain .navbar a.deptTitle {
+    color: #275d38;
+    /* #1A4127 */
+}
+ul.global-quicklinks li a {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    padding-block-start: 1ex;
+    padding-block-end: 1ex;
+    font-family: "Rajdhani", arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #EFEFEF;
+    color: #275d38;
+    text-transform: uppercase;
+}
+ul.global-quicklinks li:first-child a {
+    background-color: #275d38;
+    color: white;
+}
+ul.global-quicklinks li:not(:first-child) a {
+    margin-left: 15px;
+}
+ul.global-quicklinks li a:hover {
+    background-color: #1A4127;
+    color: white;
+}
+#deptNav {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    text-transform: uppercase;
+}
+#deptNav .deptNavWrap {
+    display: flex;
+    min-height: 10px;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#deptNav ul {
+    display: flex;
+}
+#deptNav a {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    font-family: "Rajdhani", arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    white-space: nowrap;
+    text-decoration: none;
+}
+#deptNav a:hover {
+    background: #ddd;
+}
+#globalHeader ol, 
+#deptNav ol, 
+#globalHeader ul, 
+#deptNav ul,  
+#globalHeader li, 
+#deptNav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* begin tablet styling */
+@media only screen and (min-width: 768px) {
+    
+}
