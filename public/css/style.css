@@ -1,3 +1,4 @@
+/* ======================header styling */
 #globalHeader .globalHeaderMain .navbar a.deptTitle {
     color: #275d38;
     /* #1A4127 */
@@ -70,6 +71,81 @@ ul.global-quicklinks li a:hover {
     margin: 0;
 }
 
+/* ===============footer styling */
+#globalFooter {
+    position: relative;
+    font-family: "Rajdhani", arial, sans-serif;
+}
+#globalFooter .footerDept {
+    background-color: #E4E4E4;
+    background: #eaebec;
+    background: linear-gradient(to bottom, #eaebec 0%, #ffffff 61%, #fbfbfb 100%);
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px;
+    line-height: 1.25em;
+}
+#globalFooter .footerDept ul {
+    text-align: center;
+}
+#globalFooter .footerDept a {
+    color: #275d38
+}
+#globalFooter .footerDept a:hover {
+    color: #1A4127
+}
+#globalFooter ol, 
+#globalFooter ul, 
+#globalFooter li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#globalFooter .footerDept li {
+    display: inline;
+}
+#globalFooter .footerDept li:after {
+    display: inline;
+    position: relative;
+    content: ' | ';
+}
+#globalFooter .footerUniversity-top {
+    color: #fff;
+    background-color: #275d38;
+    padding: 40px;
+}
+#globalFooter .footerUniversity-top a {
+    color: #fff;
+}
+#globalFooter .footerUniversity-bottom {
+    background-color: #275037;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+#globalFooter .footerUniversity-bottom li {
+    display: inline-block;
+}
+#globalFooter .footerUniversity-bottom .center-content {
+    margin: 0 auto;
+}
+#globalFooter .footerUniversity-bottom a {
+    color: white;
+}
+#globalFooter .footerUniversity-bottom .footerUniversity-contact li:not(:last-of-type):after {
+    content: '\2022';
+    padding: 0 7px 0 10px;
+}
+#globalFooter .footerUniversity-bottom .university-social {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#globalFooter .footerUniversity-bottom .university-social a {
+    padding: 0 10px;
+}
 /* begin tablet styling */
 @media only screen and (min-width: 768px) {
     
