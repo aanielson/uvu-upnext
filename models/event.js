@@ -4,6 +4,8 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false
       },
+      imgName: DataTypes.STRING,
+      imgAlt: DataTypes.STRING,
       event_date: DataTypes.DATE,
       event_description: DataTypes.STRING,
     },{

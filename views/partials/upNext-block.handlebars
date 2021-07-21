@@ -1,11 +1,10 @@
-<div class="card-body">
-    <h5 class="card-title">UPnext Example</h5>
-    <p>
-    <strong>ID</strong>: {{dataValues.id}}</p>
-    <p>
-    <p>
-    <strong>Title</strong>: {{dataValues.title}}</p>
-    <p>
-    <strong>Description:</strong> {{dataValues.summary}}</p>
-    <a href="/">← Back To Home</a>
+<div class="up-next-card">
+    <div class="post-img-container">
+        <img src="/img/{{imgName}}" alt="{{imgAlt}}">
+    </div>
+    <div class="post">
+        <h3>{{title}}</h3>
+        <p class="post-summary">{{summary}}</p>
+        <a class="post-read-more" href="{{upNextLink}}">Read More</a>
+    </div>
 </div>

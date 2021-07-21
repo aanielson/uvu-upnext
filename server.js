@@ -15,8 +15,8 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.use(require('./controllers/events_controller'));
-app.use(require('./controllers/upNext_controller'));
+// Routes
+require("./controllers/index")(app);
 
 // listen on port 3000
 var PORT = process.env.PORT || 8080;
